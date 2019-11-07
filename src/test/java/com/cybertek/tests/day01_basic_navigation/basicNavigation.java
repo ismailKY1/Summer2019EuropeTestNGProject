@@ -1,4 +1,4 @@
-package com.cybertek.tests.day1_basic_navigation;
+package com.cybertek.tests.day01_basic_navigation;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,10 @@ public class basicNavigation {
         WebDriver driver= new ChromeDriver();
 
         //Open the website
-        driver.get("https://cybertekschool.com");
+        driver.get("https://www.amazon.com");
+
+        //get the title and print it
+        System.out.println(driver.getTitle());
 
     }
 
