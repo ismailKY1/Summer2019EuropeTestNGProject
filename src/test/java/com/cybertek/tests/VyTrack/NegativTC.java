@@ -9,9 +9,9 @@ public class NegativTC {
     public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
 
         driver.get("https://qa1.vytrack.com/user/login");
+        driver.manage().window().maximize();
 
         WebElement userName = driver.findElement(By.id("prependedInput"));
         userName.sendKeys("user1");
@@ -35,7 +35,7 @@ public class NegativTC {
             System.out.println("FAIL");
             System.out.println("Actual Message = " + actualMessage);
         }
-        driver.close();
+         driver.close();
 
        // driver.quit();
 
