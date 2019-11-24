@@ -23,6 +23,7 @@ public class WebDriverFactory {
             case "edge":
                 WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
+                break;
 
         }
 
